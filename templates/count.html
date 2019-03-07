@@ -1,0 +1,17 @@
+<h1>counted</h1>
+
+<a href="{% url 'home' %}">Back to homepage</a>
+
+
+<h1>Word text</h1> </br>
+{{words}}
+<br>
+
+
+<h1>No. of words = {{count}}</h1>
+</br>
+
+{% for word,value in sortedlist %}
+{{ word }} = {{value}}
+<br>
+{% endfor %}
